@@ -43,7 +43,7 @@ public class PlanetaDTO implements Serializable {
 		this.size = size;
 	}
 
-	public boolean isHabitable() {
+	public boolean getHabitable() {
 		return habitable;
 	}
 	public void setHabitable(boolean habitable) {
