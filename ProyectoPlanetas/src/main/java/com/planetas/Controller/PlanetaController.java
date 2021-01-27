@@ -17,7 +17,7 @@ import com.planetas.DTO.PlanetaDTO;
 import com.planetas.Services.PlanetaService;
 
 @RestController
-@RequestMapping("avi/v1/planetas")
+@RequestMapping("api/v1/planetas")
 @CrossOrigin(origins = "*" , methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 public class PlanetaController implements ObjectController<PlanetaDTO> {
 
