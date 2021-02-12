@@ -1,5 +1,5 @@
 package com.planetas.Entities;
-
+//D:
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
