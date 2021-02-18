@@ -79,13 +79,13 @@ public class PlanetaController implements ObjectController<PlanetaDTO> {
 	
 	//----------Delete----------
 	  @DeleteMapping("/{id}")	  
-	  @Transactional public ResponseEntity delete(@PathVariable int id) { try {
-	  service.delete(id); return
-	  ResponseEntity.status(HttpStatus.OK).body("Registro eliminado"); } catch
-	  (Exception e) { return ResponseEntity.status(HttpStatus.BAD_REQUEST).
-	  body("Error al eliminar registro"); } }
-	 
-	
-	
+	  @Transactional public ResponseEntity delete(@PathVariable int id) {
+		  try {
+			  service.delete(id);
+			  return ResponseEntity.status(HttpStatus.OK).body("Registro eliminado");
+		  } catch (Exception e) {
+			  return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error al eliminar registro");
+		  }
+	  }
 	
 }

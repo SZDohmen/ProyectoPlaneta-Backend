@@ -106,10 +106,14 @@ public class PlanetaService implements ObjectServices <PlanetaDTO> {
 	
 	//----------Delete----------
 	  @Transactional
-	  public boolean delete(int id) throws Exception{ try {
-	  if(repository.existsById(id)) { repository.deleteById(id); return true; }
-	  else { throw new Exception(); } } catch (Exception e) { throw new
-	  Exception();} }
-	 
+	  public boolean delete(int id) throws Exception{
+		  try {
+			  if(repository.existsById(id)) {
+				  repository.deleteById(id);
+				  return true;
+			  } else {
+				  throw new Exception();
+			  }
+		  } catch (Exception e) { throw new Exception();} }	 
 	
 }
